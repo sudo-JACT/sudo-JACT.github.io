@@ -10,12 +10,12 @@ root {
 
 body {
 
-  background-color: var(--background);
+  background-color: #181602;
   
 }
 
 .prm {
 
-  background-color: var(--primary);
+  background-color: #efdb2a;
 
 }
