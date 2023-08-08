@@ -1,0 +1,21 @@
+root {
+
+  --text: #fdfbe7;
+  --background: #181602;
+  --primary: #efdb2a;
+  --secondary: #181602;
+  --accent: #d5c210;
+
+}
+
+body {
+
+  background-color: var(--background);
+  
+}
+
+.prm {
+
+  background-color: var(--primary);
+
+}
