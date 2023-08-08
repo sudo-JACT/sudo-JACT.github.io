@@ -8,14 +8,80 @@ root {
 
 }
 
+
 body {
 
+  text-align: center;
+  color: #d5c210;
   background-color: #181602;
   
 }
 
-.prm {
+.btn-prm {
+
+  color: #181602;
+  background-color: #d5c210;
+
+}
+
+.sc {
+
+  color: #fdfbe7;
+  background-color: #181602;
+
+}
+
+.acc {
+
+  background-color: #d5c210;
+
+}
+
+.btn-prm:hover {
+
+  color: #181602;
+  background-color: #efdb2a;
+
+}
+
+.btn-prm:active {
+
+  color: #181602;
+  background-color: #efdb2a;
+  
+}
+
+.btn-prm:focus {
+
+  color: #181602;
+  background-color: #efdb2a;
+
+}
+
+.c {
+
+  text-align: center;
+
+}
+
+.grid-container {
+
+  grid-template-columns: auto auto auto;
+  /*background-color: #d5c210;*/
+  padding: 20px;
+  display: grid;
+
+}
+
+.grid-item {
 
   background-color: #efdb2a;
+  border: 10px solid #181602;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 3rem;
+  height: auto;
+  /*display: inline-grid;*/
 
 }
