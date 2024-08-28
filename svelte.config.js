@@ -1,7 +1,7 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
-const base = 'https://sudo-jact.github.io/';
+const base = '/public';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
