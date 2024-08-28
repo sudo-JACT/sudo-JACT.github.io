@@ -19,7 +19,7 @@ jobs:
         node-version: '10.8.2'  
 
     - name: Install dependencies
-      run: npm install
+      run: npm install --force
 
     - name: Build Svelte app
       run: npm run build
