@@ -20,7 +20,7 @@ jobs:
       run: npm install --force
 
     - name: Build Svelte app
-      run: npm run deploy --force
+      run: npm run deploy
 
     - name: Deploy to GitHub Pages
       uses: crazy-max/ghaction-github-pages@v1
