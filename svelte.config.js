@@ -24,7 +24,7 @@ const config = {
 			'@utils': './src/lib/utils'
 		},
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? base : '/sudo-JACT.github.io'
+			base: process.env.NODE_ENV === 'production' ? '/sudo-JACT.github.io':'	',
 		}
 	}
 };
