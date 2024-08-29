@@ -23,7 +23,7 @@ jobs:
       run: npm run deploy
 
     - name: Deploy to GitHub Pages
-      uses: crazy-max/ghactions-gh-pages@v3
+      uses: crazy-max/ghactions-github-pages@v1
       with:
         target_branch: gh-pages
         build_dir: build
