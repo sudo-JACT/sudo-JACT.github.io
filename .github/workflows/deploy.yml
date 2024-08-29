@@ -31,9 +31,6 @@ jobs:
     - name: Build Svelte app
       run: npm run deploy
 
-    - name: De
-      run: npx gh-pages -d buld -t true
-
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
