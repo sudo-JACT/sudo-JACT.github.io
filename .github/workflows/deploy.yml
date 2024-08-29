@@ -27,5 +27,7 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: sudo-JACT/actions-gh-pages@v3
       with:
+        target_branch: gh-pages
+        build_dir: build
+      env:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build
