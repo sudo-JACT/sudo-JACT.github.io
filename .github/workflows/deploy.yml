@@ -17,10 +17,10 @@ jobs:
         node-version: '16' 
 
     - name: Install dependencies
-      run: npm install
+      run: npm install --force
 
     - name: Build Svelte app
-      run: npm run deploy
+      run: npm run deploy --force
 
     - name: Deploy to GitHub Pages
       uses: crazy-max/ghaction-github-pages@v1
