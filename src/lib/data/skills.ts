@@ -56,7 +56,11 @@ export const items = [
 	defineSkill({
 		slug: 'c++',
 		color: 'cyan',
-		description: 'C++ is a general-purpose programming language that was developed as an extension of the C programming language. It was created by Bjarne Stroustrup in the early 1980s, with the goal of adding object-oriented programming features to C while maintaining the efficiency and low-level capabilities that made C popular.\nKey Features of C++:\n',
+		description: 'C++ is a general-purpose programming language that was developed as an extension of the C programming language. It was created by Bjarne Stroustrup in the early 1980s, with the goal of adding object-oriented programming features to C while maintaining the efficiency and low-level capabilities that made C popular.\
+		Key Features of C++:\
+		1) Object-Oriented Programming (OOP):\
+			C++ supports OOP concepts like classes, inheritance, polymorphism, encapsulation, and abstraction. These features enable programmers to model complex systems more naturally by grouping data and behavior together in objects.\
+		2)',
 		logo: Assets.Cpp,
 		name: 'C++',
 		category: 'pro-lang'
