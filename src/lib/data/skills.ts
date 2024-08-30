@@ -56,7 +56,7 @@ export const items = [
 	defineSkill({
 		slug: 'c++',
 		color: 'cyan',
-		description: "LOL",
+		description: "C++ is a general-purpose programming language that was developed as an extension of the C programming language. It was created by Bjarne Stroustrup in the early 1980s, with the goal of adding object-oriented programming features to C while maintaining the efficiency and low-level capabilities that made C popular.\nKey Features of C++:\n",
 		logo: Assets.Cpp,
 		name: 'C++',
 		category: 'pro-lang'
