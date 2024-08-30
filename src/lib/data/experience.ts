@@ -11,7 +11,7 @@ export const items: Array<Experience> = [
 		type: 'Software Development',
 		location: 'Home',
 		period: { from: new Date() },
-		skills: getSkills('ts', 'js', 'c++'),
+		skills: getSkills('ts', 'js', 'c++', 'rust', 'python', 'java'),
 		name: 'Open Source Developer',
 		color: 'red',
 		links: [],
