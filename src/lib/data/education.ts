@@ -14,7 +14,8 @@ export const items: Array<Education> = [
 		slug: 'dummy-education-item',
 		subjects: ['C', 'Algorithm', 'Algebra', 'Python', 'C++', 'Java', 'English (B2 level)', 'Telecommunications', 'Rest Paradigm', 'Blockchains Technology', 'PHP', 'SQL', 'HTML', 'CSS', 'JS']
 	},
-	{
+
+	/*{
 		degree: 'PhD of Computer Science',
 		description: '',
 		location: 'USA',
@@ -25,7 +26,7 @@ export const items: Array<Education> = [
 		shortDescription: '',
 		slug: 'dummy-education-item-2',
 		subjects: ['Assembly', 'Rust', 'Computer Architecture', 'Algorithms and Data structures']
-	}
+	}*/
 ];
 
 export const title = 'Education';

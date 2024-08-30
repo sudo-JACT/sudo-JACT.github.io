@@ -6,18 +6,19 @@ export const items: Array<Experience> = [
 	{
 		slug: 'open-sourcer',
 		company: 'Self-employed',
-		description: 'Creating awesome tools for developers.',
+		description: 'Creating fun and useful litle projects',
 		contract: ContractType.SelfEmployed,
 		type: 'Software Development',
 		location: 'Home',
 		period: { from: new Date() },
-		skills: getSkills('ts', 'js'),
+		skills: getSkills('ts', 'js', 'cpp'),
 		name: 'Open Source Developer',
 		color: 'red',
 		links: [],
 		logo: Assets.Unknown,
 		shortDescription: 'Creating awesome tools for developers.'
 	},
+
 	{
 		slug: 'software-freelance',
 		company: 'Self-employed',
@@ -33,6 +34,7 @@ export const items: Array<Experience> = [
 		logo: Assets.Unknown,
 		shortDescription: 'Creating awesome applications for customers.'
 	},
+
 	{
 		slug: 'software-freelance-junior',
 		company: 'Self-employed',
