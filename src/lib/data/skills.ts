@@ -57,7 +57,7 @@ export const items = [
 	defineSkill({
 		slug: 'c++',
 		color: 'cyan',
-		description: Desc.Cpp,
+		description: "LOL",
 		logo: Assets.Cpp,
 		name: 'C++',
 		category: 'pro-lang'
