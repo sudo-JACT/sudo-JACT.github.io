@@ -56,11 +56,26 @@ export const items = [
 	defineSkill({
 		slug: 'c++',
 		color: 'cyan',
-		description: 'C++ is a general-purpose programming language that was developed as an extension of the C programming language. It was created by Bjarne Stroustrup in the early 1980s, with the goal of adding object-oriented programming features to C while maintaining the efficiency and low-level capabilities that made C popular.\
-		Key Features of C++:\
-		1) Object-Oriented Programming (OOP):\
-			C++ supports OOP concepts like classes, inheritance, polymorphism, encapsulation, and abstraction. These features enable programmers to model complex systems more naturally by grouping data and behavior together in objects.\
-		2)',
+		description: '<p>C++ is a general-purpose programming language that was developed as an extension of the C programming language. It was created by Bjarne Stroustrup in the early 1980s, with the goal of adding object-oriented programming features to C while maintaining the efficiency and low-level capabilities that made C popular.</p>\
+		<h4>Key Features of C++:</h4>\
+		<pre></pre>\
+		<ul>\
+		<li><h5>Object-Oriented Programming (OOP):</h5>\
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;C++ supports OOP concepts like classes, inheritance, polymorphism, encapsulation, and abstraction. These features &nbsp;&nbsp;&nbsp;&nbsp;enable programmers to model complex systems more naturally by grouping data and behavior together in objects.</p>\
+		</li>\
+		<li><h5>Low-Level Memory Manipulation:</h5>\
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;Like C, C++ allows direct manipulation of memory through pointers and provides fine-grained control over how memory &nbsp;&nbsp;&nbsp;&nbsp;is allocated and deallocated. This makes C++ a powerful language for system-level programming, where performance &nbsp;&nbsp;&nbsp;&nbsp;and resource management are critical.</p>\
+		</li>\
+		<li><h5>Static Typing:</h5>\
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;C++ is statically typed, meaning that the type of every variable and expression is known at compile time. This &nbsp;&nbsp;&nbsp;&nbsp;helps catch many types of errors before the program is run.</p>\
+		</li>\
+		<li><h5>Rich Standard Library:</h5>\
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;C++ has a comprehensive standard library that includes facilities for data structures (like vectors, lists, and &nbsp;&nbsp;&nbsp;&nbsp;maps), input/output (I/O), algorithms, and more. The Standard Template Library (STL) is a key part of this, &nbsp;&nbsp;&nbsp;&nbsp;offering a collection of template classes and functions.</p>\
+		</li>\
+		<li><h5>Template Programming:</h5>\
+		<p></p>\
+		</li>\
+		</ul>',
 		logo: Assets.Cpp,
 		name: 'C++',
 		category: 'pro-lang'
