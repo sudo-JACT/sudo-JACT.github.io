@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+import { readFileSync } from 'fs';
 import { base } from '$app/paths';
 
 const Desc = {
@@ -73,8 +73,31 @@ export default Desc;
 /*let currentTheme: boolean;
 
 theme.subscribe((v) => (currentTheme = v));*/
-const gh = `${base}/desc/cpp.txt`;
-const data: string = fs.readFileSync(gh, 'utf8');
+
+let text;
+let items = [];
+import {onMount} from 'svelte';
+	onMount(() => {
+    loadItems();
+});
+
+const loadItems = async () => {
+    const response = await fetch('https://www.w3.org/TR/2003/REC-PNG-20031110/iso_8859-1.txt');
+    text = await response.text();
+	items = text.split('\n\n');
+};
+
+/*const data = "";
+try {
+
+    const gh = `${base}/desc/cpp.txt`;
+    const data: string = readFileSync(gh, 'utf8');
+
+}catch(e) {
+
+    const data = "lol";
+
+}*/
 
 export const getAssetURL = (desc: Desc): string => {
     /*const gh = `${base}${desc}`;
@@ -88,5 +111,5 @@ export const getAssetURL = (desc: Desc): string => {
 
 	/*return typeof desc === 'string' ? fs.readFileSync('${base}/desc/cpp.txt', 'utf8') : "lol";*/
 
-    return data;
+    return text;
 };

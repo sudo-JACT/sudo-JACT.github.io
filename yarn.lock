@@ -246,6 +246,13 @@
   resolved "https://registry.npmjs.org/@types/marked/-/marked-5.0.0.tgz"
   integrity sha512-YcZe50jhltsCq7rc9MNZC/4QB/OnA2Pd6hrOSTOFajtabN+38slqgDDCeE/0F83SjkKBQcsZUj7VLWR0H5cKRA==
 
+"@types/node@^22.5.1", "@types/node@>= 14":
+  version "22.5.1"
+  resolved "https://registry.npmjs.org/@types/node/-/node-22.5.1.tgz"
+  integrity sha512-KkHsxej0j9IW1KKOOAA/XBA0z08UFSrRQHErzEfA3Vgq57eXIMYboIlHJuYIfd+lwCQjtKqUu3UnmKbtUc9yRw==
+  dependencies:
+    undici-types "~6.19.2"
+
 "@types/prismjs@^1.26.0":
   version "1.26.0"
   resolved "https://registry.npmjs.org/@types/prismjs/-/prismjs-1.26.0.tgz"
@@ -2140,6 +2147,11 @@ unconfig@^0.3.10:
     defu "^6.1.2"
     jiti "^1.19.1"
     mlly "^1.4.0"
+
+undici-types@~6.19.2:
+  version "6.19.8"
+  resolved "https://registry.npmjs.org/undici-types/-/undici-types-6.19.8.tgz"
+  integrity sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==
 
 undici@^5.28.3:
   version "5.28.4"
