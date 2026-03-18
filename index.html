@@ -10,38 +10,49 @@
 
     <body>
     
-        <nav class="navbar">
-        <div class="logo">IMDO<span>NKEY</span></div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#" class="btn-nav">CV</a></li>
-        </ul>
-        </nav>
+        <main class="terminal-window">
+            <header class="terminal-header">
+                <span class="buttons">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </span>
+                <div class="title">bash — 80x24</div>
+            </header>
 
-        <header class="hero">
-            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit <span class="highlight">ed do eiusmod tempor</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div class="cta-group">
-                <button class="btn-primary">LOL</button>
-                <button class="btn-secondary">LMAO</button>
-            </div>
-        </header>
+            <section class="content">
+                <div class="command-line">
+                    <span class="prompt">user@terminal:~$</span> <span class="typing">whoami</span>
+                </div>
+                
+                <div class="response">
+                    <h1>NOME_COGNOME</h1>
+                    <p>> Full Stack Developer // Human Being</p>
+                    <p>> Location: Earth.sys</p>
+                </div>
 
-        <section class="cards">
-            <div class="card">
-                <h3>PJ 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
-            <div class="card">
-                <h3>PJ 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="card">
-                <h3>PJ 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
-        </section>
+                <div class="command-line">
+                    <span class="prompt">user@terminal:~$</span> <span class="typing">ls ./progetti</span>
+                </div>
+
+                <div class="grid">
+                    <div class="project-item">
+                        <span class="dir">drwxr-xr-x</span>
+                        <a href="#" class="file">progetto_01.exe</a>
+                        <span class="desc">-- App di gestione dati</span>
+                    </div>
+                    <div class="project-item">
+                        <span class="dir">drwxr-xr-x</span>
+                        <a href="#" class="file">web_scraper.py</a>
+                        <span class="desc">-- Tool di analisi automatica</span>
+                    </div>
+                </div>
+
+                <div class="command-line cursor-line">
+                    <span class="prompt">user@terminal:~$</span> <span class="cursor">_</span>
+                </div>
+            </section>
+        </main>
 
     </body>
 </html>

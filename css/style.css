@@ -1,12 +1,15 @@
 :root {
-    --bg-primary: #0f172a;
-    --bg-secondary: #1e293b;
-    --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --accent: #38bdf8;
-    --accent-hover: #0ea5e9;
-    --card-bg: #1e293b;
-    --border: rgba(255, 255, 255, 0.1);
+    --bg-dark: #0a0a0a;
+    /* Nero profondo */
+    --text-green: #00ff41;
+    /* Verde Matrix classico */
+    --text-dim: #008f11;
+    /* Verde scuro per dettagli */
+    --accent-blue: #007bff;
+    /* Blu per i link file */
+    --terminal-header: #333333;
+    /* Grigio per la barra superiore */
+    --font-mono: 'Courier New', Courier, monospace;
 }
 
 * {
@@ -16,112 +19,142 @@
 }
 
 body {
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    background-color: var(--bg-primary);
-    color: var(--text-main);
-    line-height: 1.6;
-}
-
-/* Navbar */
-.navbar {
+    background-color: #1a1a1a;
+    /* Sfondo esterno al terminale */
+    color: var(--text-green);
+    font-family: var(--font-mono);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 1.5rem 10%;
-    border-bottom: 1px solid var(--border);
+    min-height: 100vh;
+    padding: 20px;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+/* Finestra Terminale */
+.terminal-window {
+    background-color: var(--bg-dark);
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
 }
 
-.logo span {
-    color: var(--accent);
-}
-
-.nav-links {
+.terminal-header {
+    background-color: var(--terminal-header);
+    padding: 10px;
     display: flex;
-    list-style: none;
-    gap: 2rem;
     align-items: center;
+    position: relative;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: var(--text-muted);
-    transition: 0.3s;
+.buttons {
+    display: flex;
+    gap: 8px;
 }
 
-.nav-links a:hover {
-    color: var(--accent);
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
 }
 
-/* Hero Section */
-.hero {
+.red {
+    background: #ff5f56;
+}
+
+.yellow {
+    background: #ffbd2e;
+}
+
+.green {
+    background: #27c93f;
+}
+
+.title {
+    color: #bbb;
+    font-size: 12px;
+    position: absolute;
+    width: 100%;
     text-align: center;
-    padding: 100px 10%;
+    left: 0;
 }
 
-.hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
+/* Contenuto */
+.content {
+    padding: 20px;
+    font-size: 1rem;
 }
 
-.highlight {
-    color: var(--accent);
+.command-line {
+    margin-bottom: 15px;
 }
 
-.hero p {
-    color: var(--text-muted);
-    max-width: 600px;
-    margin: 0 auto 2rem;
-    font-size: 1.2rem;
-}
-
-/* Pulsanti */
-.btn-primary {
-    background-color: var(--accent);
-    color: var(--bg-primary);
-    padding: 0.8rem 2rem;
-    border: none;
-    border-radius: 8px;
+.prompt {
+    color: var(--text-dim);
     font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
 }
 
-.btn-primary:hover {
-    background-color: var(--accent-hover);
-    transform: translateY(-2px);
+.typing {
+    color: #fff;
 }
 
-.btn-secondary {
-    background: transparent;
-    color: var(--text-main);
-    padding: 0.8rem 2rem;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    margin-left: 1rem;
-    cursor: pointer;
+.response {
+    margin-bottom: 30px;
 }
 
-/* Cards */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 50px 10%;
+.response h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
 }
 
-.card {
-    background-color: var(--card-bg);
-    padding: 2rem;
-    border-radius: 12px;
-    border: 1px solid var(--border);
+/* Lista Progetti */
+.grid {
+    margin-bottom: 30px;
 }
 
-.card h3 {
-    margin-bottom: 1rem;
-    color: var(--accent);
+.project-item {
+    margin-bottom: 8px;
+}
+
+.dir {
+    color: var(--text-dim);
+    margin-right: 15px;
+}
+
+.file {
+    color: var(--accent-blue);
+    text-decoration: none;
+}
+
+.file:hover {
+    text-decoration: underline;
+    background: rgba(0, 255, 65, 0.1);
+}
+
+.desc {
+    color: #888;
+    margin-left: 10px;
+}
+
+/* Animazione Cursore */
+.cursor {
+    display: inline-block;
+    background-color: var(--text-green);
+    width: 10px;
+    height: 1.2rem;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
 }
